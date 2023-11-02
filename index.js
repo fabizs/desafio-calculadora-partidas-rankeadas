@@ -12,9 +12,10 @@ let nivel = ""
 
 // definindo função que calcule o saldo
 function calcrank(vitorias,derrotas){
-    return vitorias - derrotas;
+    let saldo = (vitorias - derrotas)
+    return saldo;
 }
-let saldo = calcrank(vitorias,derrotas)
+let saldovitorias = calcrank(vitorias,derrotas)
 
 // utilizando estruturas condicionais e operadores para obter o nível do jogador
 if (vitorias <= 10){
@@ -34,4 +35,4 @@ if (vitorias <= 10){
 }
 
 // mensagem de saída
-console.log(jogador + " tem saldo de " + saldo + " e está no nível " + nivel)
+console.log(jogador + " tem saldo de " + saldovitorias + " e está no nível " + nivel)
